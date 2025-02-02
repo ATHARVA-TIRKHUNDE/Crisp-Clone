@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/asset 53.svg" type="image/x-icon">
+        <title>Crisp</title>
+        <!-- <link href="./src/output.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="./dist/output.css">
+    </head>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) {
+                header.classList.add("bg-white", "bg-opacity-80", "backdrop-blur-md");
+            } else {
+                header.classList.remove("bg-white", "bg-opacity-80", "backdrop-blur-md");
+            }
+        });
+
+    </script>
+
+<body>
+    <!-- Header -->
+    <header class=" fixed left-0 right-0 top-0 py-6 z-100 transition-all duration-300 bg-transparent">
+        <div class="container ">
+            <nav class="flex items-center justify-between space-x-14">
+                <!-- logo -->
+                <div class="flex-none">
+                    <img src="./assets/asset 46.svg" alt="">
+                </div>
+                <!-- middle -->
+                <div class="flex-1 items-center justify-around gap-6 ">
+                    <a class="p-3">Features</a>
+                    <a class="p-3">Apps</a>
+                    <a class="p-3">Pricing</a>
+                    <a class="p-3">Integrations</a>
+                    <a class="p-3">Help</a>
+                </div>
+                <!-- Last -->
+                <div class="flex items-center justify-between gap-2 ">
+                    <div class="bg-gray-100 px-1 py-1 rounded-sm">
+                        <img class="p-1 w-6 object-cover absolute " src="./assets/asset 0.svg" alt="">
+                        <input class="border-none focus:outline-none ml-8 " type="search"
+                            placeholder="Search our website">
+                        <button class="bg-white rounded-sm p-1 text-sm">Ctrl+k</button>
+                    </div>
+                    <div>
+                        <a href="#" class="mx-2">Log In</a>
+                        <button class="px-3 py-2 bg-[#1972f5] text-white rounded-xl">Get Started</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="absolute  w-screen h-screen -z-50 bg-gradient-to-b from-[#b9deff] via-[#b9deff] to-transparent">
+        <div>
+            <div class="absolute -left-[10%] -top-[350px] ">
+                <img src="assets/asset 5.svg" class="w-[1662px] object-fill overflow-clip" alt="">
+            </div>
+            <div class="absolute bottom-0">
+                <img src="assets/asset 6.svg" alt="">
+            </div>
+            <div class="absolute bottom-0 right-0">
+                <img src="assets/asset 7.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container pt-[110px] ">
+        <div class="flex flex-col items-center">
+            <div
+                class=" cursor-pointer p-2 rounded-4xl bg-black/10 text-blue-600 font-semibold inline-flex items-center w-fit gap-1 border-[1px] border-blue-600 text-sm">
+                <span class="px-2 bg-blue-600 rounded-4xl text-white">NEW</span>
+                <span>The new Crisp v4 Is out!</span>
+                <img class="inline" src="assets/asset 66.svg" alt="">
+            </div>
+            <div class="mt-6 text-5xl font-bold text-[#2d4375] leading-14 text-center">
+                The future of customer <br>
+                support is here
+            </div>
+            <div class="mt-6 font-semibold text-lg leading-[26px] text-center text-gray-700">
+                The all-in-one AI-powered business messaging platform that gathers <br>
+                teams, conversations, data and knowledge, around one place.
+            </div>
+            <button
+                class="mt-8 rounded-2xl font-semibold px-[20px] py-[10px] text-white/90 text-base border border-[#1972f5]"
+                style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                Use Crisp fot free
+            </button>
+            <p class="mt-[9px] leading-4 text-[13px] text-[#293a57] text-center font-medium">
+                14 days free trial — No commitment
+            </p>
+        </div>
+
+        <div class="relative flex items-center justify-center ">
+            <img class="bg-white/80 p-4 w-fit rounded-2xl mt-12" src="assets/asset 2.png" alt="">
+            <img class="absolute bottom-0 -left-50 " src="assets/asset 3.png" alt="">
+            <img class="absolute bottom-0 -right-50" src="assets/asset 4.png" alt="">
+        </div>
+
+    </div>
+
+    <!-- Centre Image -->
+    <div
+        class="container mt-10 text-[#344055] text-5xl leading-14 mb-[40px] text-center max-w-[800px] font-normal text-wrap">
+        Meet the workspace that delights your <span class="text-[#1972f5]">teams</span> & <span
+            class="text-[#1972f5]">customers</span>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="container">
+        <!-- Grid -->
+        <div class="grid grid-cols-2 gap-6 mb-10">
+
+            <!-- Box -->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 8.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Inbox</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="object-contain">
+                    <img width="533" src="assets/asset 9.png" alt="">
+                </div>
+            </div>
+
+            <!-- Box -->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 10.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Automations</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="object-contain w-full flex items-center justify-center">
+                    <img class="max-h-[365px] object-contain" src="assets/asset 11.png" alt="">
+                </div>
+            </div>
+
+            <!-- Box 2 col span -->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative flex col-span-2 ">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 12.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">CRM</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="object-contain w-full flex items-center justify-center">
+                    <img class="max-h-[365px] object-contain" src="assets/asset 13.png" alt="">
+                </div>
+            </div>
+
+            <!-- Box no image-->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 14.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Artificial Intelligence</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box Row span 2-->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative row-span-2">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 17.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Widget</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="object-contain w-full flex items-center justify-center">
+                    <img class="max-h-[365px] object-contain" src="assets/asset 11.png" alt="">
+                </div>
+            </div>
+
+            <!-- Box -->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative row-span-2">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 15.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Knowledge</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="object-contain w-full flex items-center justify-center">
+                    <img class="max-h-[365px]  object-contain" src="assets/asset 16.png" alt="">
+                </div>
+            </div>
+
+            <!-- Box no image-->
+            <div class="rounded-2xl bg-blue-50 border-[1px] border-gray-300 relative">
+                <div class="p-8">
+                    <div class="flex">
+                        <img class="items-center justify-between" src="assets/asset 14.svg" alt="">
+                        <span class="text-center font-semibold px-2 text-[#1972f5]">Campaign</span>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold mb-2">
+                            Centralize your inbound messages
+                        </h3>
+                        <p class="text-sm text-gray-600 font-medium">
+                            Centralize all your inbound conversations from emails, website chat, WhatsApp,
+                            Messenger,
+                            phone, and more into one collaborative inbox. This allows multiple team members to
+                            access,
+                            manage, and respond to messages efficiently.
+                        </p>
+                        <button
+                            class="mt-6 rounded-2xl font-semibold px-4 py-2 text-white/90 text-base border border-[#1972f5]"
+                            style="background: linear-gradient(180deg, #ffffff3d, #fff0), #1972f5;">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container relative mb-8">
+        <div class="rounded-2xl bg-zinc border-[1px] border-gray-300  mt-[300px]  relative">
+            <div class="flex items-center justify-between relative">
+                <img class=" absolute translate-[-50%] w-[500px] left-[50%] -top-20" src="assets/asset 19.png" alt="">
+            </div>
+            <div
+                class="container mt-10 text-[#344055] text-[2.5rem] leading-14 mb-[40px] text-center max-w-[800px] font-semibold text-wrap">
+                Built for customer support, <br>
+                marketing, and sales. <span class="text-[#1972f5]">All together.</span>
+            </div>
+            <!-- Cards -->
+            <div class="flex items-center justify-between gap-3 p-4">
+                <div class=" rounded-2xl bg-zinc border-[1px] border-gray-300 p-6">
+                    <img src="assets/asset 20.png" alt="">
+                    <h4 class="text-[#1972f5] text-xl mt-2">Customer Support</h4>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Cross-channel customer support experiences using modern messaging
+                    </p>
+                </div>
+                <div class=" rounded-2xl bg-zinc border-[1px] border-gray-300 p-6">
+                    <img src="assets/asset 21.png" alt="">
+                    <h4 class="text-[#1972f5] text-xl mt-2">Inbound Sales</h4>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Cross-channel customer support experiences using modern messaging
+                    </p>
+                </div>
+                <div class=" rounded-2xl bg-zinc border-[1px] border-gray-300 p-6">
+                    <img src="assets/asset 22.png" alt="">
+                    <h4 class="text-[#1972f5] text-xl mt-2">Marketing</h4>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Cross-channel customer support experiences using modern messaging
+                    </p>
+                </div>
+            </div>
+
+            <div class="m-6 rounded-2xl overflow-hidden border-[1px] border-gray-300">
+                <img src="assets/asset 24.png" alt="">
+            </div>
+            <div class="absolute left-0 -bottom-[10%]">
+                <img class="w-100 " src="assets/asset 26.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-40">
+        <div class="container pt-[110px] mb-20 ">
+            <div class="flex flex-col items-center">
+
+                <div class="mt-6 text-5xl font-bold text-[#2d4375] leading-14 text-center">
+                    The future of customer <br>
+                    support is here
+                </div>
+                <button
+                    class="mt-8 rounded-2xl font-semibold px-[20px] py-[10px] text-white/90 text-base border border-[#fff0]"
+                    style="background: linear-gradient(180deg, #ffffff29, #fff0), #030d26;">
+                    Use Crisp fot free
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-20">
+        <div class="grid grid-cols-3 gap-[32px]">
+
+            <!-- Column 1 -->
+            <div class="flex flex-col gap-6">
+                <div class="h-[400px] rounded-xl overflow-hidden border border-gray-300 relative">
+                    <img class="w-full h-full object-cover" src="assets/asset 27.jpeg" alt="">
+                    <img class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        src="/assets//asset 29.svg" alt="">
+                </div>
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex ">
+                        <img src="assets/asset 30.svg" alt="">
+                        <div class="flex ml-2">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="text-xl mt-4">
+                        We are able to measure and manage all mediums effectively and increase customer satisfaction
+                        and resolution time drastically compared to previous solutions we used like Intercom and
+                        Zendesk.
+                    </p>
+                </div>
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex gap-4 mb-4">
+                        <img class="rounded-full" src="assets/asset 32.jpeg" alt="">
+                        <div>
+                            <h4 class="font-semibold text-zinc-900">Chrls Sees</h4>
+                            <p class="font-semibold text-zinc-600">Hoxton Mix</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 font-medium text-sm">
+                            Crisp has been amazing and the first thing that really attracted me to, as a techy, was
+                            the size of the chat widget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex flex-col gap-6">
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex gap-4 mb-4">
+                        <img class="rounded-full" src="assets/asset 33.jpeg" alt="">
+                        <div>
+                            <h4 class="font-semibold text-zinc-900">Edoardo Moreni</h4>
+                            <p class="font-semibold text-zinc-600">Emma</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 font-medium text-sm">
+                            We chose Crisp from the begining because of its flexibility and level of automations it
+                            allowed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex items-center justify-center py-2">
+                        <img class="w-16" src="assets/asset 70.svg" alt="">
+
+                    </div>
+                    <p class="text-lg mt-3 text-zinc-500 text-center font-semibold p-2">
+                        <i>All is ready to use "out of the box" and Crisp support is stellar... We have tried many other
+                            solutions, Crisp is the only one that allowed us to do everything easily within the same
+                            app.</i>
+                    </p>
+                </div>
+                <div class="h-[400px] rounded-xl overflow-hidden border border-gray-300 relative">
+                    <img class=" w-full h-full object-cover" src="assets/asset 34.jpeg" alt="">
+                    <img class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        src="/assets//asset 29.svg" alt="">
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flex flex-col gap-6">
+
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex ">
+                        <img src="assets/asset 30.svg" alt="">
+                        <div class="flex ml-2">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                            <img class="w-8" src="assets/asset 31.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="text-xl mt-4">
+                        We are able to measure and manage all mediums effectively and increase customer satisfaction
+                        and resolution time drastically compared to previous solutions we used like Intercom and
+                        Zendesk.
+                    </p>
+                </div>
+                <div class="h-[400px] rounded-xl overflow-hidden border border-gray-300 relative">
+                    <img class="w-full h-full object-cover" src="assets/asset 36.jpeg" alt="">
+                    <img class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                        src="/assets//asset 29.svg" alt="">
+                </div>
+                <div class=" bg-gray-50 rounded-xl p-4 border border-gray-300">
+                    <div class="flex gap-4 mb-4">
+                        <img class="rounded-full" src="assets/asset 32.jpeg" alt="">
+                        <div>
+                            <h4 class="font-semibold text-zinc-900">Chrls Sees</h4>
+                            <p class="font-semibold text-zinc-600">Hoxton Mix</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-gray-600 font-medium text-sm">
+                            Crisp has been amazing and the first thing that really attracted me to, as a techy, was
+                            the size of the chat widget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="assets/ftrimg.png" alt="">
+    </div>
+
+    <div class="border-t-[0.5px] border-gray-300 mb-16"></div>
+
+    <!-- footer -->
+    <footer class="container mb-8">
+        <div class="flex gap-12 items-start justify-between">
+
+            <!-- first column -->
+            <div class="flex flex-col items-start gap-4">
+                <div>
+                    <img src="assets/asset 47.svg" alt="">
+                </div>
+                <div class="flex items-center justify-between py-2 px-4 border border-gray-300 rounded-xl gap-6 ">
+                    <img class="w-5 rounded-lg" src="assets/asset 48.svg" alt="">
+                    <p>English (United states)</p>
+                    <div class="w-4 ">
+                        <img class="" src="assets/asset 71.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex items-center justify-between cursor-pointer">
+                    <img class="w-6 mr-5" src="assets/asset 72.svg" alt="">
+                    <img class="w-6 mr-5" src="assets/asset 73.svg" alt="">
+                    <img class="w-6 mr-5" src="assets/asset 74.svg" alt="">
+                    <img class="w-6 mr-5" src="assets/asset 75.svg" alt="">
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div>
+                <ul class="flex flex-col items-start gap-1">
+                    <li class="text-gray-400">Product</li>
+                    <li class="font-medium text-gray-700 flex items-center gap-1
+                    justify-between ">Testimonials <span class="text-center text-yellow-500 text-sm"><img
+                                class="inline-block w-3 " src="assets/asset 76.svg" alt=""> 4.5</span></li>
+                    <li class="font-medium text-gray-700">Comparisons</li>
+                    <li class="font-medium text-gray-700">Alternatives</li>
+                    <li class="font-medium text-gray-700">Integrations</li>
+                    <li class="font-medium text-gray-700">Developer Hub</li>
+                    <li class="font-medium text-gray-700">Ask a demo</li>
+                </ul>
+            </div>
+
+            <!-- Third Column -->
+            <div>
+                <ul class="flex flex-col items-start gap-1">
+                    <li class="text-gray-400">Company</li>
+                    <li class="font-medium text-gray-700">About us</li>
+                    <li class="font-medium text-gray-700">Contact us</li>
+                    <li class="font-medium text-gray-700">Careers</li>
+                    <li class="font-medium text-gray-700">Brand Assets</li>
+                    <li class="font-medium text-gray-700">Partnerships</li>
+                </ul>
+            </div>
+
+            <!-- Fourth Column -->
+            <div>
+                <ul class="flex flex-col items-start gap-1">
+                    <li class="text-gray-400">Resources</li>
+                    <li class="font-medium text-gray-700">Read our blog</li>
+                    <li class="font-medium text-gray-700">Help Center</li>
+                    <li class="font-medium text-gray-700">Security</li>
+                </ul>
+            </div>
+
+            <!-- Fifth Column -->
+            <div>
+                <ul class="flex flex-col items-start gap-1">
+                    <li class="text-gray-400">Legal</li>
+                    <li class="font-medium text-gray-700">Terms of use</li>
+                    <li class="font-medium text-gray-700">Privacy</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="flex items-center justify-between my-8 text-gray-700 font-medium">
+            <div><img class="w-4 inline-block mr-2" src="./assets/asset 77.svg" alt=""> System Status</div>
+            <div>
+                © 2025 Crisp IM SAS
+            </div>
+            <div class="text-center font-medium text-blue-900">
+                <img class="inline-block" src="assets/asset 50.svg" alt="">
+                Made in Europe
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
